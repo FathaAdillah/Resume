@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact, footer, .portofolio{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -401,6 +401,43 @@ section .title::after{
     padding: 30px;
     width: max-content;
     display:flexbox;
+}
+/* portofolio section styling */
+.portofolio .carousel .card{
+    background: #fffefe;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.portofolio .carousel .card:hover{
+    background: rgb(20, 107, 220);
+}
+.portofolio .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.portofolio .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.portofolio .carousel .card img{
+    height: 150px;
+    width: 205px;
+    object-fit: cover;
+    border: 5px solid rgb(20, 107, 220);
+    transition: all 0.3s ease;
+}
+.portofolio .carousel .card:hover img{
+    border-color: #fff;
 }
 
 /* teams section styling */
